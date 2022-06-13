@@ -41,10 +41,10 @@ jobs:
         with:
           # relative path to the place where source code with Dockerfile is located
           context:
-          # Note: tags has to be all lower-case!!
+          # Note: tags has to be all lower-case
           tags: |
-            todo-backend/eventsourcing.nodejs.simple:latest 
-            ghcr.io/oskardudycz/eventsourcing.nodejs/simple:latest
+            beneux/todo-backend.nodejs.simple:latest 
+            ghcr.io/beneux/todo-backend.todo-backend.nodejs/simple:latest
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
 
