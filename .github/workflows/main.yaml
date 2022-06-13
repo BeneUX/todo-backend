@@ -13,7 +13,7 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "11"
-          cache: "maven"
+          #cache: "maven"
       - run: |
           mvn clean install -DskipTests
           ls -la
